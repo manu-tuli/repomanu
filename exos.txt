@@ -1,0 +1,23 @@
+Le 25 / 01 / 2022.
+
+=== pitch veille tecnologique ===
+## Faire des recherches et expliquer le sujet au public ##
+- Nosql :
+- Posgresql :
+ Raccourcis -visual studio -vscode
+
+=== Postgresql ===
+-	 importer car.sql
+- utiliser 
+SELECT
+INSERT INTO 
+UPDATE 
+DELETE
+
+- afficher les 5 premieres voitures,
+- afficher toutes les voitures Toyota,
+- modifier le prix de la voiture à l'id2,
+- effacer la dernière voiture.
+
+- créer une nouvelle table client avec 5 personnes,
+- ajouter une relation.

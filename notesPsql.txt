@@ -1,0 +1,14 @@
+SELECT * FROM car ORDER BY id DESC LIMIT 5;
+SELECT * FROM car WHERE maker='Toyota';
+SELECT * FROM car WHERE maker LIKE '%Toyota%';
+
+SELECT * FROM car ORDER BY id FETCH FIRST 10 ROWS ONLY;
+INSERT INTO car (maker, model, price) VALUES ('Hyundai','sonata','42');
+UPDATE public.car SET price=? WHERE id=2 values(0);
+DELETE FROM public.car ORDER BY id DESC LIMIT 1.
+
+SELECT name,
+	CASE WHEN (monthlymaintenance > 100) 
+	THEN 'expensive' ELSE 'cheap'
+	END AS cost
+	FROM cd.facilities;
