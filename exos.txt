@@ -23,18 +23,18 @@ DELETE
 - ajouter une relation.
 
 === Winforms ===
-            /*
-            deviner le chiffre donné.
-            générer un chiffre aléatoire entre 0 et 100,
-            demamnder d'entrer un chiffre,
-            à condition que le chiffre envoyé soit égal au chiffre donné.
-            afficher : "Oui, oui, oui! vous avez gagné !" 
-            par contre s'il est plus petit, afficher : "votre chiffre est trop petit"
-            sinon  afficher : "votre chiffre est trop grand"
-            */ 
 	/*
-             envoyer les données de textBox
-             */
+	deviner le chiffre donné.
+	générer un chiffre aléatoire entre 0 et 100,
+	demamnder d'entrer un chiffre,
+	à condition que le chiffre envoyé soit égal au chiffre donné.
+	afficher : "Oui, oui, oui! vous avez gagné !" 
+	par contre s'il est plus petit, afficher : "votre chiffre est trop petit"
+	sinon  afficher : "votre chiffre est trop grand"
+        */ 
+	/*
+        envoyer les données de textBox
+        */
 
 
 
