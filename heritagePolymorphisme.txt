@@ -1,0 +1,29 @@
+
+	Platon & Hume :
+
+- le genre = général .
+- l'espèce = spécifique .
+
+- les Objets ->
+ les attributs / les propriétés .
+
+- les différences spécifiques .
+=====
+
+	les classes -> instanciation -> les objets :
+- les membres ->
+ les champs / les propriétés / fonctions / méthodes(constructeurs)
+ les types / les sous-types .
+ 	 /* héritage & plymorphisme
+         *  base = héritage
+         * constructeurs de classe
+         * getters & setters 
+         * surcharges
+         *  is = polymorphisme
+         * gettype()
+         * typeof()
+         * upcasting
+         * downcasting
+         * 
+         */
+
