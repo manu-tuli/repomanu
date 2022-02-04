@@ -1,0 +1,40 @@
+/*# sourceMappingURL=style1.css.map */
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 2rem;
+  font-weight: 100;
+  line-height: 1.7;
+}
+
+main aside {
+  background-color: #24cc24;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #2469cc;
+}
+
+footer {
+  background-color: #cc2475;
+}
+
+nav {
+  background-color: #cc2475;
+}
+
+.header__title {
+  background-color: #cc8624;
+}
+
+.carousel {
+  background-color: white;
+}
+.skills{
+  color: red;
+}
+.education{
+}
+.experiences{
+}
+.info{
+}
