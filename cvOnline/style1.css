@@ -1,40 +1,80 @@
 /*# sourceMappingURL=style1.css.map */
 body {
   font-family: "Roboto", sans-serif;
-  font-size: 2rem;
+  font-size: 1.5rem;
   font-weight: 100;
   line-height: 1.7;
+  text-align: center;
+  margin: 0%;
+  color: gray;
 }
 
-main aside {
-  background-color: #24cc24;
+main{
+  text-align: left;
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-around;
   align-items: center;
-  background: #2469cc;
+  padding: 10%;
+  background-color: azure;
+}
+
+aside {
+  margin: 10%;
+  border-radius: 10px;
+  background-color: whitesmoke;
+  padding: 10%;
 }
 
 footer {
-  background-color: #cc2475;
+  background-color: lightgreen;
 }
 
 nav {
-  background-color: #cc2475;
+  background-color: pink;
+  margin-bottom: 10%;
 }
 
 .header__title {
-  background-color: #cc8624;
+  background-color: cornsilk;
 }
 
 .carousel {
-  background-color: white;
+  background-color: aliceblue;
 }
+
+.carousel img{
+  background-color: aliceblue;
+  border-radius: 40%;
+  /* margin-bottom: 10%; */
+  padding: 10%;
+}
+
+h2{
+  background-color: lightgreen;
+}
+
+h3{
+  background-color: lightgreen;
+  border-radius: 10%;
+}
+
 .skills{
-  color: red;
 }
 .education{
 }
 .experiences{
 }
-.info{
+
+.info ul{
+  color: gray;
+  font-size: 1rem;
+  margin-bottom: 30%;
+  padding-bottom: 30px;
 }
+
+li ul{
+  color: darkslategray;
+  text-align: left;
+  text-indent: 4px;
+} 

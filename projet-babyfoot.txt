@@ -1,0 +1,27 @@
+12 fevrier : 
+
+projet app web : Leaderboards rencontres de babyfoot .
+	int : indentifiant
+	date : date du Match
+	varchar : NomEquipe1
+	varchar : NomEquipe2
+	varchar : ResultatsEquipe1
+	varchar : ResultatsEquipe2
+
+languages : 
+	front = react
+	back = C# ASP.NETCore6
+	database = postgresql
+
+Objectifs :
+	développer des compétences 
+	relationnelles et organisationnelles
+
+requête GET ALL
+requête GET By date
+			
+Rôles dans la team :
+	Alexandre : bdd
+	Antoine : ASP.NETCore
+	Pascal : JS
+	moi : CSS html

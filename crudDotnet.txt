@@ -1,0 +1,25 @@
+/ PROJET FULLSTACK ? / deadline 4 fevrier à 16H30
+
+objectifs : 
+
+exercice :
+	- prendre (créer) des données ,
+
+	- les mettre dans une table ,
+
+		ajouter ,
+
+		accéder ,
+
+		modifier ,
+
+		supprimer ,
+
+	- authentification ,
+
+	- droits de gestion ,
+
+postgresql : user = id name pass
+HTML : form = CRUD
+	equipe1 equipe2 
+
