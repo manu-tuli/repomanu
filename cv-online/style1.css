@@ -11,6 +11,7 @@ body {
 
 header{
   text-shadow: 2px 2px whitesmoke;
+  margin-top: 200px;
 }
 
 main{
@@ -56,6 +57,10 @@ nav {
   margin: 10%;
 }
 
+* img:hover{
+  box-shadow: 4px 5px 10px lightgreen; 
+}
+
 h2{
   background-color: lightgreen;
 }
@@ -73,7 +78,7 @@ h3{
 .experiences{
 }
 
-h3+img{
+h3 + img{
   max-height: 300px;
 }
 
