@@ -1,4 +1,4 @@
-/*# sourceMappingURL=style1.css.map */
+
 body {
   font-family: "Roboto", sans-serif;
   font-size: 1rem;
@@ -52,9 +52,6 @@ nav div {
   margin-top: 10%;
 }
 
-nav div + img{
-  
-}
 
 h3, h2{
   background-color: lightgreen;
@@ -76,18 +73,9 @@ nav h3{
   padding-bottom: 30px;
 }
 
-/* .header--title {
-  background-color: cornsilk;
-}
-
-.carousel--title {
-  background-color: aliceblue;
-} */
-
 * img:hover{
   box-shadow: 4px -4px 15px lightgreen; 
 }
-
 
 @keyframes animPhoto{
   from{
@@ -100,10 +88,9 @@ nav h3{
 
 @keyframes animWelcome{
   from{
-    transform: translateY(200px);
+    transform: translateY(100px);
   }
   to{
     transform: translateY(0px);
   }
-}
-
+} 
