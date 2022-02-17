@@ -1,0 +1,56 @@
+VS > solution ASP.NET Core
+outils > gestionnaire de package nuget > installer les 3 nécessaires
+
+outils > gestionnaire de package nuget > Console de gestionnaire....
+
+
+entrer dans la console : Scaffold-DbContext "Server=localhost;Port=5432;Database=nom de la db;User Id=user pg;Password=mdp" Npgsql.EntityFrameworkCore.PostgreSQL -OutputDir Models
+
+
+
+EN CAS DE PROBLEME DE BUILD :
+
+Dans la classe de context, mettre OnConfiguring en commentaire.
+
+Ajouter dans Program.cs, ajouter aux instructions d'ajout de service (et son using nécessaire) : 
+builder.Services.AddDbContext<HopitalContext>(options =>
+{
+    options.UseNpgsql(builder.Configuration.GetConnectionString("DevConnectionPostGreSQL"));
+});
+
+Ajouter dans appsettings.json : 
+"AllowedHosts": "*",
+  "ConnectionStrings": {
+    "DevConnectionPostGreSQL": "Server=localhost;Port=5432;Database=FlagSHospital;User Id=postgres;Password=root"
+  }
+
+
+
+
+Créer un contrôleur dans le dossier idoine avec ce code : 
+using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
+using testEFCore.Models;
+
+namespace testEFCore.Controllers
+{
+	[ApiController]
+	[Route("api/[controller]")]
+	public class RoleController : Controller
+	{
+		private readonly HopitalContext _context;
+
+		// constructeur
+		public RoleController(HopitalContext context)
+		{
+			_context = context;
+		}
+
+		[HttpGet]
+		public async Task<ActionResult<IEnumerable<Role>>> GetUsers()
+		{
+			return await _context.Roles.ToListAsync();
+		}
+	}
+}
+

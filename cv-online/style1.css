@@ -1,17 +1,18 @@
 /*# sourceMappingURL=style1.css.map */
 body {
   font-family: "Roboto", sans-serif;
-  font-size: 1.5rem;
+  font-size: 1rem;
   font-weight: 100;
   line-height: 1.7;
   text-align: center;
-  margin: 0%;
+  margin: 0px;
   color: darkslategray;
 }
 
 header{
-  text-shadow: 2px 2px whitesmoke;
-  margin-top: 200px;
+  text-shadow: 2px 1px whitesmoke;
+  margin-top: 0px;
+  animation: animPhoto 2s 0s ease-in-out;
 }
 
 main{
@@ -26,62 +27,48 @@ main{
 
 aside {
   width: 400px;
+  padding: 5%;
   margin: 5%;
   border-radius: 10px;
   background-color: whitesmoke;
-  padding: 5%;
 }
 
 footer {
   background-color: lightgreen;
 }
 
-nav {
-  /* background-color: whitesmoke; */
-  margin-bottom: 10%;
-}
-
-.header__title {
-  background-color: cornsilk;
-}
-
-
-.carousel {
-  background-color: aliceblue;
-}
-
-.carousel + img{
+img{
   background-color: aliceblue;
   border-radius: 30%;
-  /* margin-bottom: 10%; */
-  margin: 10%;
-}
-
-* img:hover{
-  box-shadow: 4px 5px 10px lightgreen; 
-}
-
-h2{
-  background-color: lightgreen;
-}
-
-h3{
-  background-color: lightgreen;
-  border-radius: 10%;
-  text-align: center;
-}
-
-.skills{
-}
-.education{
-}
-.experiences{
-}
-
-h3 + img{
   max-height: 300px;
 }
 
+nav {
+  margin-bottom: 10%;
+}
+/* <-- --> */
+
+nav div {
+  margin-top: 10%;
+}
+
+nav div + img{
+  
+}
+
+h3, h2{
+  background-color: lightgreen;
+}
+
+nav h3{
+  background-color: lightgreen;
+  border-radius: 10%;
+  text-align: center;
+  animation: animWelcome 2s 0s ease-in-out;
+}
+
+
+/* <-- --> */
 .info ul{
   color: gray;
   font-size: 1.25rem;
@@ -89,8 +76,34 @@ h3 + img{
   padding-bottom: 30px;
 }
 
-li ul{
-  color: darkslategray;
-  text-align: left;
-  text-indent: 4px;
-} 
+/* .header--title {
+  background-color: cornsilk;
+}
+
+.carousel--title {
+  background-color: aliceblue;
+} */
+
+* img:hover{
+  box-shadow: 4px -4px 15px lightgreen; 
+}
+
+
+@keyframes animPhoto{
+  from{
+    clip-path: inset(0% 100%);
+  }
+  to{
+    clip-path: inset(0% 0%);
+  }
+}
+
+@keyframes animWelcome{
+  from{
+    transform: translateY(200px);
+  }
+  to{
+    transform: translateY(0px);
+  }
+}
+
