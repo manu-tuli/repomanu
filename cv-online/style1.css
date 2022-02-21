@@ -1,4 +1,10 @@
 
+*,
+*::before
+*::after{
+  margin: 0;
+}
+
 body {
   font-family: "Roboto", sans-serif;
   font-size: 1rem;
@@ -11,8 +17,7 @@ body {
 
 header{
   text-shadow: 2px 1px whitesmoke;
-  margin-top: 0px;
-  animation: animPhoto 2s 0s ease-in-out;
+  animation: animPhoto 3s 0s ease-in;
 }
 
 main{
@@ -20,15 +25,18 @@ main{
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
-  align-items: center;
   padding: 5%;
   background-color: azure;
 }
 
 aside {
+  display: grid;
+  justify-content: center;
+  grid-template-columns: auto;
   width: 400px;
+  height: 400px;
   padding: 5%;
-  margin: 5%;
+  margin: 2%;
   border-radius: 10px;
   background-color: whitesmoke;
 }
@@ -46,8 +54,8 @@ img{
 nav {
   margin-bottom: 10%;
 }
-/* <-- --> */
 
+/* <-- --> */
 nav div {
   margin-top: 10%;
 }
@@ -55,15 +63,15 @@ nav div {
 
 h3, h2{
   background-color: lightgreen;
+  text-align: center;
 }
 
 nav h3{
   background-color: lightgreen;
   border-radius: 10%;
   text-align: center;
-  animation: animWelcome 2s 0s ease-in-out;
+  animation: animWelcome 1s 0s ease-out;
 }
-
 
 /* <-- --> */
 .info ul{
@@ -71,10 +79,16 @@ nav h3{
   font-size: 1.25rem;
   margin-bottom: 30%;
   padding-bottom: 30px;
+  list-style: none;
 }
 
 * img:hover{
   box-shadow: 4px -4px 15px lightgreen; 
+}
+
+.info ul li:hover{
+  background-color: lightgreen;
+  color: darkslategray;
 }
 
 @keyframes animPhoto{
